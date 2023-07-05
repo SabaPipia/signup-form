@@ -1,8 +1,8 @@
 import { Container, InputField, Error } from "./component";
 import Button from "./button";
 import FormFooter from "./formFooter";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 type inputType = {
   firstName: string;
@@ -34,7 +34,7 @@ function Form() {
       password: "",
     };
     const checkEmail = data.email.split("");
-    const isValid = checkEmail.map((character, index) => {
+    checkEmail.map((character, index) => {
       if (character === "@") {
         const firstIndex = index;
         const newEmail = checkEmail.splice(index);
