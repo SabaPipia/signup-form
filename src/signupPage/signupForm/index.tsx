@@ -1,4 +1,3 @@
-import React from "react";
 import PlanPricing from "./planPricing";
 import Form from "./form";
 import styled from "styled-components";

@@ -1,8 +1,13 @@
+import React from "react";
 import { styled } from "styled-components";
 
-function Button() {
-  return <Btn>Claim Your Free Trial</Btn>;
+interface buttonProps {
+  click: () => void;
 }
+
+const Button: React.FC<buttonProps> = ({ click }) => {
+  return <Btn onClick={click}>Claim Your Free Trial</Btn>;
+};
 
 const Btn = styled.button`
   cursor: pointer;
@@ -15,5 +20,6 @@ const Btn = styled.button`
   border-radius: 6px;
   font-weight: 600;
   border-bottom: 4px solid #4bb185;
+  margin-top: 15px;
 `;
 export default Button;
