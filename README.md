@@ -1,6 +1,6 @@
 <h1>Technologies used</h1>
 
-1.React + TypeScript + Vite
+1.React + TypeScript + Vite <br/>
 2.StyledComponents
 
 <h1>Start Application</h1>
