@@ -8,6 +8,9 @@ export const Container = styled.div`
   border-radius: 6px;
   margin-bottom: 30px;
   text-align: center;
+  @media only screen and (max-width: 375px) {
+    width: 350px;
+  }
 `;
 
 export const Header = styled.h1`

@@ -15,16 +15,16 @@ function App() {
   );
 }
 const Globalstyles = createGlobalStyle`
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-  *{
-    font-family: "Poppins", sans-serif;
-    margin:0;
-    padding:0;
-  }
-  body{
-    background-color: #ff7979;
-    background-image: url(${bg});
-  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  font-family: "Poppins", sans-serif;
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #ff7979;
+  background-image: url(${bg});
+}
 `;
 const GridContainer = styled.div`
   display: grid;
@@ -32,5 +32,10 @@ const GridContainer = styled.div`
   height: 100vh;
   place-items: center;
   gap: 50px;
+  @media only screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 0px 20px;
+  }
 `;
 export default App;

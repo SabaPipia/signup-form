@@ -21,5 +21,8 @@ const Btn = styled.button`
   font-weight: 600;
   border-bottom: 4px solid #4bb185;
   margin-top: 15px;
+  @media only screen and (max-width: 375px) {
+    font-size: 16px;
+  }
 `;
 export default Button;

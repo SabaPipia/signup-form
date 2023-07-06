@@ -7,6 +7,9 @@ export const Container = styled.div`
   padding: 40px 30px;
   justify-self: start;
   border-radius: 6px;
+  @media only screen and (max-width: 375px) {
+    margin-bottom: 50px;
+  }
 `;
 type inputType = {
   borderc: string;
